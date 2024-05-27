@@ -1,0 +1,4 @@
+@startuml Estadio
+"Equipo Baseball" *-- "*" Jugador
+"Equipo Baseball" o-- "1"Estadio :Asignado
+@enduml

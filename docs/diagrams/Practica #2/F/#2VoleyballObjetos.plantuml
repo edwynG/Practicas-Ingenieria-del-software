@@ -1,0 +1,38 @@
+@startuml Voleyball
+
+object Equipo
+Equipo : Nombre = Venezuela
+Equipo : Registro = 1956
+object Jugador 
+Jugador : Nombre = Diego
+Jugador : Telefono = 02128956471
+Jugador : Direccion = Caracas
+Jugador : Numero = 35
+Jugador : Posicion = Zaguero
+object Jugador_1 
+Jugador_1 : Nombre = Raul
+Jugador_1 : Telefono = 02124571264
+Jugador_1 : Direccion = Maracay
+Jugador_1 : Numero = 12
+Jugador_1 : Posicion = Libero
+Equipo *-- Jugador
+Equipo *-- Jugador_1
+object Entrenador 
+Entrenador : Nombre = Jacinto
+Entrenador : Telefono = 02128035647
+Entrenador : Direccion = Maracaibo
+Equipo o-- Entrenador
+object Juego 
+Juego : Localidad = Santiago 
+Juego : Puntuacion = 45
+Equipo --> Juego
+object Acreditacion
+Acreditacion : Nivel = 4
+object Experiencia 
+Experiencia : Tiempo = 8
+Entrenador -- Acreditacion
+Entrenador -- Experiencia 
+
+
+
+@enduml

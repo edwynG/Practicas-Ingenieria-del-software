@@ -1,0 +1,5 @@
+@startuml Caracterizacion
+Caracterizacion  "1..*"  --  Criterio : Se fundamenta
+Caracterizacion --  "Elemento clasificado"
+"Elemento clasificado" ..> Criterio
+@enduml

@@ -1,0 +1,5 @@
+@startuml Persona
+Persona ^--Estudiante 
+Persona ^--Empleado
+Empleado ^--Profesor
+@enduml

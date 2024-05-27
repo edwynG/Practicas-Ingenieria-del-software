@@ -1,0 +1,9 @@
+@startuml TEG
+"Trabajo de investigacion"  <|--  "Trabajo Especial de Grado" :Es
+"Trabajo de investigacion"  <|--  "Trabajo de Grado de Maestria": Es
+"Trabajo de investigacion"   -- "1 ..2" Tutor 
+Estudiante<|-- "Estudiante de pregrado"
+"Estudiante de pregrado" "1..2"-- "Trabajo Especial de Grado"
+Estudiante<|-- "Estudiante de postgrado"
+"Estudiante de postgrado""1"-- "Trabajo de Grado de Maestria"
+@enduml

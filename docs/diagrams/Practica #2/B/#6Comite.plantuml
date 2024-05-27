@@ -1,0 +1,5 @@
+@startuml Comite
+Comite "0..*"-- "2..*" Persona
+Persona --  Coordinador
+Comite "1..*"-- Coordinador
+@enduml

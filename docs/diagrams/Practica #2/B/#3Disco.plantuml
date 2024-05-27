@@ -1,0 +1,4 @@
+@startuml Disco
+"Disco duro" *-- Pista
+Pista *-- Sector
+@enduml

@@ -1,0 +1,5 @@
+@startuml Ecuacion
+"Ecuacion FP"  *--  "Operando UFC" : Tiene
+"Ecuacion FP"  *--  "Operando TCF" : Posee
+"Operando TCF"..> "Fi"
+@enduml

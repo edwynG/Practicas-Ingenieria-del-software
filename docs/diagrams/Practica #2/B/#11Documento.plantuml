@@ -1,0 +1,10 @@
+@startuml Documento
+"Documento grafico"  *-- "*"Hojas : Tiene
+Hojas  *--  "Objeto dibujo" : Contiene
+"Objeto dibujo"<|-- Texto
+"Objeto dibujo"<|-- "Figura 2D"
+"Objeto dibujo"<|-- Grupo
+Grupo O-- "2..*""Objeto dibujo" 
+"Figura 2D"<|-- Circulo
+"Figura 2D"<|-- Cuadrado
+@enduml

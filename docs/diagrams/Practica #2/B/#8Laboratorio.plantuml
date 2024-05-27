@@ -1,0 +1,6 @@
+@startuml Laboratorio
+Laboratorio  "*" o--  "Equipo no nuclear" : Tiene
+"Equipo nuclear" "*"--  "Laboratorio nuclear": Posee
+Equipo <|--  "Equipo nuclear"
+Equipo <|--  "Equipo no nuclear"
+@enduml

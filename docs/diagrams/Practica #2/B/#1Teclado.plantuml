@@ -1,0 +1,4 @@
+@startuml Teclado
+Teclado *-- "105..*"Tecla : Tiene
+@enduml 
+

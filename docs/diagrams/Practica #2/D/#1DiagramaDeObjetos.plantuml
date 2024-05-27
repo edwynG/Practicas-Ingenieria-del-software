@@ -1,0 +1,30 @@
+@startuml Operacion
+object Expresion_1
+Expresion_1 : operador_binario = /
+object Expresion_2
+Expresion_2 : operador_binario = +
+object Expresion_3
+Expresion_3 : operador_binario = +
+Expresion_1 o-- Expresion_2 : Operador 1
+Expresion_1 o-- Expresion_3 : Operador 2
+object Variable_1 
+Variable_1 : nombre = x
+Expresion_2 o-- Variable_1
+object Expresion_4 
+Expresion_4 : operador_binario = /
+Expresion_2 o-- Expresion_4
+object Variable_2
+Variable_2 : nombre = y 
+Expresion_4 o-- Variable_2
+object Constante_1
+Constante_1 : valor = 2
+Expresion_4 o-- Constante_1
+object Expresion_5
+Expresion_5 : operador_binario =/
+Expresion_3 o-- Expresion_5
+Expresion_5 o-- Variable_1
+object Constante_2 
+Constante_2 : valor = 3
+Expresion_5 o-- Constante_2
+Expresion_3 o-- Variable_2
+@enduml

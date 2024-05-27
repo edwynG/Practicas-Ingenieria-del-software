@@ -1,0 +1,4 @@
+@startuml Triangulo
+Poligono <|-- Triangulo
+Triangulo  *-- "3" Lado:Tiene
+@enduml

@@ -1,0 +1,34 @@
+@startuml Voleyball
+class Persona {
+    -Nombre
+    -Telefono 
+    -Direccion
+}
+class Acreditacion{
+    -Nivel
+}
+class Jugador {
+    -Numero
+    -Posicion
+}
+class Experiencia{
+    -Tiempo
+}
+class Equipo{
+    -Nombre 
+    -Registro
+}
+class Juego {
+    -Localidad
+    -Puntuacion
+}
+Persona <|-- Jugador
+Persona<|-- Entrenador
+Equipo *-- "6..20"Jugador : Tiene
+Jugador<|-- Capitan
+Equipo --> Juego :Compiten
+Equipo "1..*" o-- "1" Entrenador
+Entrenador -- Acreditacion 
+Entrenador --Experiencia
+
+@enduml
