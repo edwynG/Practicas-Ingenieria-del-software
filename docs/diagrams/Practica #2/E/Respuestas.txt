@@ -1,0 +1,11 @@
+1. ¿Qué significa que el paquete “top” tanga una dependencia con el paquete “controllers”?
+    Esto significa que el paquete dependiente(top) no puede funcionar sin la presencia del paquete del que depende(“controllers”).
+
+2. ¿Con cuántos paquetes tiene dependencias el paquete “Threads”? ¿Cuántas
+dependencias son de entrada y cuántas de salida? ¿Si se hace un cambio en alguna de 
+las clases del paquete “Threads” qué podría suceder?
+    Este paquete cuenta con 6 dependencias, 3 de entrada y 3 de salida. La realización de modificaciones en las clases de este paquete, que posee un alto número de dependencias, podría generar consecuencias considerables, cuya magnitud dependerá tanto de la naturaleza del cambio como de la forma en que se gestione.
+
+3. Hablando en términos de modularidad, ¿este diagrama muestra un código con bajo o 
+alto acoplamiento entre los paquetes? ¿Esto es bueno o malo?
+    La interconexión entre los paquetes en este diagrama es considerable, lo que genera una alta dependencia entre ellos. Esta situación puede resultar problemática, ya que un cambio en un paquete podría afectar a otros, complicando la corrección o actualización del sistema.

@@ -1,0 +1,19 @@
+@startuml diagrams
+Object Poligono
+object  Punto3{
+    cord_x = 10
+    cord_y= 00
+}
+object  Punto2{
+    cord_x = 10
+    cord_y = 10
+}
+object  Punto1{
+    cord_x = 0
+    cord_y = 0
+}
+Punto2  -- Poligono
+Punto3  -- Poligono
+Punto1  -->"1...*" Poligono:"Pertenece"
+
+@enduml

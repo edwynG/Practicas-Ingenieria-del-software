@@ -1,0 +1,27 @@
+@startuml diagrams
+Object Poligono
+object  Punto4{
+    cord_x = 1
+    cord_y= 1
+}
+object  Punto3{
+    cord_x = 0
+    cord_y = 1
+}
+object  Punto2{
+    cord_x = 1
+    cord_y = 0
+}
+
+object  Punto1{
+    cord_x = 0
+    cord_y = 0
+}
+
+Poligono -- Punto1
+Poligono -- Punto2
+Poligono -- Punto3
+Poligono -- Punto4
+
+
+@enduml

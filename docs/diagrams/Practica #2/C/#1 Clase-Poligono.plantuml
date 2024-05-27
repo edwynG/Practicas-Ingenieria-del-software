@@ -1,0 +1,10 @@
+@startuml Diagrams
+Class "Poligono"
+Class "Punto"{
+    + cord_x
+    + cord_y
+}
+
+Poligono  *-- "*" Punto
+
+@enduml
