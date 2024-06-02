@@ -1,0 +1,30 @@
+@startuml Estados
+hide empty description
+skinparam noteBackgroundColor transparent
+skinparam noteBorderColor transparent
+state "Encargar Producto" as encargarP
+state "Validar Pedido" as validarP
+state "Pagar" as pagar
+state "Cobrar Pago" as cobrarP
+state "Obtener producto" as obtenerP
+state "Entregar Cervezas \n a transporte" as entregar
+state "Envio Urgente" as enviarU
+state "Envio ordinario" as enviarO
+state c2 <<choice>>
+state end2 <<end>>
+state "Enviar recibo \n Y añadir cliente a lista de \n satisfechos" as ready
+[*] -> encargarP
+encargarP -> pagar
+
+pagar -> validarP
+ validarP -> cobrarP
+ cobrarP -d-> obtenerP
+ obtenerP -> c2
+ note on link: ¿Urgente?
+ c2 -d-> enviarO: No
+ c2 -> enviarU: Si
+enviarO -> entregar
+enviarU -d-> entregar
+entregar -d-> ready
+ready -> end2
+@enduml
