@@ -2,9 +2,10 @@
 Repositario para el **manejo** de las siguentes practicas
 - Practica #1 - Git y GitHub
 - Practica #2 - UML
+- Practica #07 - JAVA (Guardado en el directorio src/main)
 
 > **NOTA
-El repositorio está sujeto a cambios, por lo que puede usarse para agregar la elaboración de las demas practicas y posiblemente actualización de la estructura.**
+El repositorio está sujeto a cambios, por lo que puede usarse para agregar la elaboración de las demas practicas, **retos** y posiblemente actualización de la estructura.**
 
 ### Estructura del repositorio
 La estructura que se emplea en el repositorio es la siguiente:
